@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PALIMA | WEBFORMS BIODATA  </title>
+</head>
+<center>
+<body background="https://i.pinimg.com/736x/2b/e6/1e/2be61ee5ee611b290d7d57c53474e1e7.jpg">
+<h2><align="center">PERSONAL BIO-DATA FORM</h2></align>
+</center>
+<form>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%" background="https://i.pinimg.com/736x/cc/5b/56/cc5b5638dfc3077c3659144290366a0c.jpg">
+    <tr>
+        <td><b>Full Name:</b></td>
+        <td><input type="text" name="fullname" placeholder="Last, First Middle" required></td>
+        <td rowspan="4" width="150" align="center">
+    <b>PHOTO</b><br>
+    <img id="photoPreview" src="https://i.pinimg.com/736x/45/f2/ac/45f2ac435aa25db73dc3d75c2f914977.jpg" width="120" border="1">
+
+    <br>
+    <input type="file" id="photoInput" accept="image/*"
+           onchange="previewPhoto();">
+</td>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Date of Birth:</b></td>
+        <td><input type="date" name="dob" required></td>
+    </tr>
+
+    <tr>
+        <td><b>Gender:</b></td>
+        <td>
+    <input type="radio" name="gender" value="male" > Male
+    <input type="radio" name="gender" value="female" > Female
+    <input type="radio2" name="Other" placeholder="Other">
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Citizenship:</b></td>
+        <td><input type="text" name="citizen"></td>
+    </tr>
+
+    <tr>
+        <td><b>Address:</b></td>
+        <td colspan="2"><input type="text" name="address" size="60" required></td>
+    </tr>
+
+    <tr>
+        <td><b>Height:</b></td>
+        <td><input type="number" name="height" min="50" max="250"> cm</td>
+        <td><b>Weight:</b> <input type="number" name="weight" min="20" max="200"> kg</td>
+    </tr>
+
+    <tr>
+        <td><b>Languages Spoken:</b></td>
+        <td colspan="2">
+            <input type="checkbox" name="lang1" value="English"> English
+            <input type="checkbox" name="lang2" value="Filipino"> Filipino
+               <input type="radio2" name="Other" placeholder="Other">
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Special Skills:</b></td>
+        <td colspan="2"><input type="text" name="skills" size="60"></td>
+    </tr>
+</table>
+
+<br>
+
+<h3>EDUCATIONAL BACKGROUND</h3>
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%" background="https://i.pinimg.com/1200x/e5/07/33/e5073371e341e9b8787096d9094442e9.jpg">
+    <tr>
+        <td><b>Level</b></td>
+        <td><b>School Name</b></td>
+        <td><b>Year Graduated</b></td>
+    </tr>
+
+    <tr>
+        <td>Elementary</td>
+        <td><input type="text" name="elem"></td>
+        <td><input type="number" name="elemyear" min="1950" max="2030"></td>
+    </tr>
+
+    <tr>
+        <td>High School</td>
+        <td><input type="text" name="hs"></td>
+        <td><input type="number" name="hsyear" min="1950" max="2030"></td>
+    </tr>
+
+    <tr>
+        <td>College</td>
+        <td><input type="text" name="college"></td>
+        <td><input type="number" name="colyear" min="1950" max="2030"></td>
+    </tr>
+</table>
+
+<br>
+
+<h3>ADDITIONAL INFORMATION </h3>
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%" background="https://i.pinimg.com/1200x/e5/07/33/e5073371e341e9b8787096d9094442e9.jpg">
+    <tr>
+        <td><b>Select Application Type:</b></td>
+        <td>
+            <select name="type" required>
+                <option value="">Select those that Apply</option>
+                <option value="Job">Job Application</option>
+                <option value="School">School Requirement</option>
+                <option value="Registration">Registration</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Emergency Contact:</b></td>
+        <td><input type="text" name="emergency" required></td>
+    </tr>
+
+    <tr>
+        <td><b>Phone:</b></td>
+        <td><input type="tel" name="phone" required></td>
+    </tr>
+</table>
+
+<br><br>
+
+<center>
+    <input type="submit" value="Submit Bio-Data">
+    <input type="reset" value="Clear">
+</center>
+
+</form>
+
+</body>
+</html>
